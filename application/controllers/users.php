@@ -14,6 +14,10 @@ class Users extends CI_Controller{
 	$this->load->view('index');
 	}
 
+  function trial(){
+  $this->load->view('trial');
+  }
+
 	function home(){
   $data['gchart']=$this->users_model->getC();
 	$this->load->view('home', $data);

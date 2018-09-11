@@ -127,6 +127,7 @@ class Products extends CI_Controller{
                   <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
                 </div>
               </div>
+             
               <h3 id="error" style="color:red;"></h3>
                <br>
                <br>
@@ -266,7 +267,7 @@ class Products extends CI_Controller{
 
 
 
-                    $pdata['p_name'] = $this->input->post('txtname');
+                    $pdata['p_uid'] = $this->input->post('txtname');
                     $pdata['p_price'] = $this->input->post('txtprice');
                     $pdata['p_type'] = $this->input->post('txtype');
                     $pdata['p_img'] = $file_name;
